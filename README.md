@@ -5,8 +5,8 @@
 ## usage
 To run:
 1. download the `GeoJSON`?)-formatted files for the **OpenDataDC data 311 datasources** above, and place them in a `data` folder in the repo:
-   - https://opendata.dc.gov/datasets/311-city-service-requests-in-2023/ as `2023-311.geojson`
-   - https://opendata.dc.gov/datasets/311-city-service-requests-in-2022/ as `2022-311.geojson`
+   - https://opendata.dc.gov/datasets/311-city-service-requests-in-2023/
+   - https://opendata.dc.gov/datasets/311-city-service-requests-in-2022/
    - and so on; these files can be regenerated on demand to capture the newest info (including new resolution info for previous years)
 2. either use the included conda environment (requires Anaconda or [miniconda](https://docs.conda.io/en/latest/miniconda.html)) to pull package dependencies through an environment:
 
