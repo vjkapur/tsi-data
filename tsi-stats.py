@@ -8,7 +8,7 @@ print('reading in data files; could take a while')
 
 # read in GeoJSON files (reduce years for testing because the whole decade takes a while)
 datasets = [gpd.read_file('data/311_City_Service_Requests_in_%i.geojson' % year)
-            for year in range(2022, 2024)]
+            for year in range(2013, 2024)]
 
 print('files read in')
 
