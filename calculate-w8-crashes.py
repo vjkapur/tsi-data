@@ -19,3 +19,6 @@ injury_attributes = ['MAJORINJURIES_BICYCLIST', 'MINORINJURIES_BICYCLIST', 'UNKN
 # counts for unique non-zero values for any injury attributes
 for injury_attribute in injury_attributes:
     print(crashes[crashes[injury_attribute] > 0][injury_attribute].value_counts())
+
+# sum totals for the filtered set
+crashes[injury_attributes].sum()
