@@ -25,3 +25,10 @@ for injury_attribute in injury_attributes:
 
 # sum totals for the filtered set
 crashes[injury_attributes].sum()
+
+# total number of crashes in where there was any recorded injury/death of anyone (1181 out of 3060, or ~38.6%)
+crashes[injury_attributes].any(axis=1).sum()
+
+# same calculation but without minor injuries (426 crashes with nonminor injuries of anybody)
+nonminor_injury_attributes = [attr for attr in injury_attributes if "MINOR" not in attr]
+crashes[nonminor_injury_attributes].any(axis=1).sum()
